@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.origin</groupId>
+	<artifactId>website</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>br.com.ingenieux</groupId>
+				<artifactId>jbake-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>default-generate</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<outputDirectory>${project.build.directory}/website</outputDirectory>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.pegdown</groupId>
+						<artifactId>pegdown</artifactId>
+						<version>1.6.0</version>
+					</dependency>
+					<dependency>
+						<groupId>org.asciidoctor</groupId>
+						<artifactId>asciidoctorj</artifactId>
+						<version>1.5.2</version>
+					</dependency>
+					<dependency>
+						<groupId>org.thymeleaf</groupId>
+						<artifactId>thymeleaf</artifactId>
+						<version>2.1.2.RELEASE</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+</project>

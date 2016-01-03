@@ -25,11 +25,6 @@
 				</configuration>
 				<dependencies>
 					<dependency>
-						<groupId>org.pegdown</groupId>
-						<artifactId>pegdown</artifactId>
-						<version>1.6.0</version>
-					</dependency>
-					<dependency>
 						<groupId>org.asciidoctor</groupId>
 						<artifactId>asciidoctorj</artifactId>
 						<version>1.5.2</version>
@@ -40,6 +35,28 @@
 						<version>2.1.2.RELEASE</version>
 					</dependency>
 				</dependencies>
+			</plugin>
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>site-maven-plugin</artifactId>
+				<version>0.12</version>
+				<configuration>
+					<repositoryOwner>orig-in</repositoryOwner>
+					<repositoryName>orig-in.github.io</repositoryName>
+					<message>update website</message>
+					<oauth2Token>${env.github_oauth2Token}_orig_in</oauth2Token>
+					<outputDirectory>${project.build.directory}/website</outputDirectory>
+					<branch>refs/heads/master</branch>
+					<merge>true</merge>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>site</goal>
+						</goals>
+						<phase>site</phase>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

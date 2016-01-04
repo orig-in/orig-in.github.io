@@ -1,0 +1,11 @@
+title=Download
+date=2016-01-04
+type=page
+status=published
+~~~~~~
+
+link:download/install.jar[install.jar]
+
+link:download/relaunch.jar[relaunch.jar]
+
+link:download/origin-upgrade.jar[origin-upgrade.jar]

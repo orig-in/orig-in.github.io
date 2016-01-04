@@ -1,0 +1,10 @@
+title=Install
+date=2016-01-04
+type=page
+status=published
+~~~~~~
+
+[source]
+----
+wget http://orig-in.github.io/download/install.jar
+----

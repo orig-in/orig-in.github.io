@@ -4,7 +4,9 @@ type=page
 status=published
 ~~~~~~
 
+image::img/mac-logo.jpg[Mac, 62, 84] 
+
 [source]
 ----
-wget http://orig-in.github.io/download/install.jar
+curl -L -s http://orig-in.github.io/install/install.sh | bash
 ----

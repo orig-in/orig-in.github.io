@@ -9,4 +9,15 @@ image::img/mac-logo.jpg[Mac, 62, 84]
 [source]
 ----
 curl -L -s http://orig-in.github.io/install/install.sh | bash
+
+----
+
+image::img/Windows_logo_2012.svg[Windows, 84, 84] 
+
+[source]
+----
+powershell -Command "$proxy = [System.Net.WebRequest]::GetSystemWebProxy();$proxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials;$wc = new-object system.net.WebClient;$wc.proxy = $proxy;$wc.DownloadFile('http://orig-in.github.io/install/install.bat', 'install_origin.bat');"
+install_origin.bat
+del install_origin.bat
+
 ----

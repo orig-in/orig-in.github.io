@@ -18,10 +18,13 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'about.html'">About</a></li>
+            <li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'install.html'">Install</a></li>
           </ul>
           <ul class="nav navbar-nav">
-            <li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'install.html'">Install</a></li>
+            <li><a href="https://github.com/orig-in/orig.in/issues'">Report an issue</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'source.html'">Source</a></li>
           </ul>
           <ul class="nav navbar-nav">
             <li><a th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}+'download.html'">Download</a></li>

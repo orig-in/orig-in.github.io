@@ -1,0 +1,11 @@
+title=Source
+date=2016-01-08
+type=page
+status=published
+~~~~~~
+
+link:https://github.com/orig-in/orig.in[Main Module]
+
+link:https://github.com/orig-in/orig-in.github.io/tree/src/src/main/jbake/content[Web Site]
+
+link:https://github.com/orig-in/[All Modules]

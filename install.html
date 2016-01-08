@@ -73,6 +73,18 @@
 <div class="content">
 <pre class="prettyprint highlight"><code>curl -L -s http://orig-in.github.io/install/install.sh | bash</code></pre>
 </div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/Windows_logo_2012.svg" alt="Windows" width="84" height="84">
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>powershell -Command "$proxy = [System.Net.WebRequest]::GetSystemWebProxy();$proxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials;$wc = new-object system.net.WebClient;$wc.proxy = $proxy;$wc.DownloadFile('http://orig-in.github.io/install/install.bat', 'install_origin.bat');"
+install_origin.bat
+del install_origin.bat</code></pre>
+</div>
 </div></p>
 		
 			<hr />

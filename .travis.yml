@@ -1,5 +1,4 @@
-language: java
-script: mvn clean install site
+script: mvn clean site-deploy
 branches:
   only:
     - src

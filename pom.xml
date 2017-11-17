@@ -9,8 +9,9 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>br.com.ingenieux</groupId>
+				<groupId>org.jbake</groupId>
 				<artifactId>jbake-maven-plugin</artifactId>
+				<version>0.2.0</version>
 				<executions>
 					<execution>
 						<id>default-generate</id>
